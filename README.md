@@ -20,4 +20,4 @@
 
 ---
 
-Neon is in active development, and contributions are welcome. Join the journey to build the next generation of AI assistants! 🚀
+Neon is in active development. 🚀
