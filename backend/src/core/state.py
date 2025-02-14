@@ -47,7 +47,7 @@ class NeonState:
         if len(self._state_history) > 100:
             self._state_history.pop(0)
 
-    def _current_state(self) -> Dict[str, Any]:
+    def _current_state(self) -> Dict[str, Any]: #  return current state as dictionary
         return {
             "status": self._status,
             "last_command": self._last_command,
