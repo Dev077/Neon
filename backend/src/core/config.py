@@ -1,4 +1,4 @@
-from pydantic import BaseSettings #for managing application settings and configuration in a structured way
+from pydantic_settings import BaseSettings #for managing application settings and configuration in a structured way
 from typing import Optional # for type enforcement
 from functools import lru_cache # for caching the settings
 

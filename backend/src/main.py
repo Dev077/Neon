@@ -1,5 +1,3 @@
-# backend/src/main.py
-
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,9 +10,9 @@ def create_app() -> FastAPI:
     settings = get_settings()
     
     app = FastAPI(
-        title=settings.APP_NAME,
+        title=settings.APPNAME,
         debug=settings.DEBUG,
-        version = settings.VERSION,
+        version = settings.API_VERSION,
     )
 
     app.add_middleware(

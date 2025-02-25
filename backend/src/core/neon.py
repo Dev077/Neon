@@ -7,7 +7,7 @@ class Neon:
 
     def __new__(cls): # singleton pattern implementation, ensures only one instance of Neon is created
         if cls._instance is None:
-            cls._instance = super()._new_(cls)
+            cls._instance = super(Neon, cls).__new__(cls)
         return cls._instance
 
     def __init__(self):# only initialize once
